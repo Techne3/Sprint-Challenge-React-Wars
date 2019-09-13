@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from 'axios'; 
 import Example from './components/Example'
+import { Container, Row } from "reactstrap";
 
 const App = () => {
 const [data, setData] = useState([]);
@@ -29,6 +30,9 @@ const [data, setData] = useState([]);
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <Container>
+        <Row>
+      
      {
        data.map((data) => {
          return(
@@ -43,9 +47,12 @@ const [data, setData] = useState([]);
          
          />
        )})
-       
+      
      }
+        </Row>
+      </Container>
     </div>
+   
   );
 }
 

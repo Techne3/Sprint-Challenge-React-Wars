@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardBody, Button, CardTitle, CardText, CardImg } from 'reactstrap';
+import { Card, CardBody, CardTitle, CardText, } from 'reactstrap';
 
 
 // import styled from "styled-components";
@@ -20,19 +20,21 @@ import { Card, CardBody, Button, CardTitle, CardText, CardImg } from 'reactstrap
 const Example = (props) => {
   return (
     <div>
+     {/* < Row xs="6" sm="4" md="3"> */}
       <Card className="cards">
         {/* <CardImg top width="100%" src="../../public/images/images.png" alt="Card image cap" /> */}
         <CardBody className="cardBody">
           <CardTitle className="cardTitles"  >{props.name}</CardTitle>
-          <CardText>
-            <p className="eyes">Eye-Color: {props.eyeColor}</p>
-           <p className="height">height: {props.height}</p> 
-             </CardText>
+         
+            <CardText className="eyes">Eye-Color: {props.eyeColor}</CardText>
+           <CardText className="height">height: {props.height}</CardText> 
+            
           <CardText>
             <small className="text-muted">Date Created: {props.created}</small>
           </CardText>
         </CardBody>
       </Card>
+      {/* </Row> */}
     </div>
   );
 };

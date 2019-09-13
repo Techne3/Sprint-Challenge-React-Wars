@@ -12,12 +12,17 @@
   font-size: 40px;
 }
 .cards{
-  margin:3% 15%;
+  
+  height:400px;
+  width:300px;
+  margin:20px;
 
 }
 .cardBody{
   background-color: black;
   opacity: .9;
+  
+  
 }
 .eyes, .height{
   color:#fff;
