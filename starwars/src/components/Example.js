@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardBody, CardTitle, CardText, } from 'reactstrap';
+import { Card, CardBody, CardTitle, CardText,} from 'reactstrap';
 
 
 // import styled from "styled-components";
@@ -19,8 +19,7 @@ import { Card, CardBody, CardTitle, CardText, } from 'reactstrap';
 
 const Example = (props) => {
   return (
-    <div>
-     {/* < Row xs="6" sm="4" md="3"> */}
+    <div className="contain">
       <Card className="cards">
         {/* <CardImg top width="100%" src="../../public/images/images.png" alt="Card image cap" /> */}
         <CardBody className="cardBody">
@@ -34,7 +33,6 @@ const Example = (props) => {
           </CardText>
         </CardBody>
       </Card>
-      {/* </Row> */}
     </div>
   );
 };
