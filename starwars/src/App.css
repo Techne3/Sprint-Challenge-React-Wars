@@ -6,3 +6,20 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.cardTitles{
+  color:yellow;
+  font-size: 40px;
+}
+.cards{
+  margin:3% 15%;
+
+}
+.cardBody{
+  background-color: black;
+  opacity: .9;
+}
+.eyes, .height{
+  color:#fff;
+
+}
